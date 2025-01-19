@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(rgb(255, 172, 19),white,Green);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background: linear-gradient(180deg, #ff9933, #ffffff, #138808); /* Saffron, White, Green gradient */
+    color: #001a9a;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.timeline-graph {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #4a9ef1;
+    margin-top: 20px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 2px;
+    background: #2196F3;
+}
+
+.timeline-points {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.timeline-point {
+    position: absolute;
+    top: 100%;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    background: #138808; /* Green */
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    transform: translateX(-50%);
+    transition: background-color 0.3s;
+}
+
+.timeline-point:hover {
+    background-color: #0b6e3d; /* Dark Green */
+}
+
+.timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.event {
+    position: relative;
+    margin: 30px 0;
+    padding: 20px;
+    background:linear-gradient(90deg,orange,white,green);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event:hover {
+    background:radial-gradient(orange,white,green);
+}
+
+.event-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #138808; /* Green */
+}
+
+.event-content p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 5px solid #ff9933; /* Saffron border for images */
+}
+
+.details-toggle {
+    display: none;
+}
+
+.details-label {
+    display: block;
+    margin-top: 10px;
+    background-color: #ff9933; /* Saffron */
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.details-label:hover {
+    background-color: #e68a00; /* Darker Saffron */
+}
+
+.more-info {
+    display: none;
+    margin-top: 20px;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.details-toggle:checked + .details-label + .more-info {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #222;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .timeline {
+        padding: 15px;
+    }
+
+    .event {
+        padding: 15px;
+    }
+
+    .event-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-point {
+        width: 40px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Highlighting the current target section */
+.event:target {
+    background-color: #e0e0e0;
+}
+
+/* Make the timeline graph responsive */
+@media (max-width: 1024px) {
+    .timeline-graph {
+        height: 60px;
+    }
+
+    .timeline-point {
+        font-size: 12px;
+        width: 40px;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-graph {
+        height: 70px;
+    }
+
+    .timeline-point {
+        font-size: 10px;
+        width: 35px;
+        padding: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-graph {
+        height: 80px;
+    }
+
+    .timeline-point {
+        font-size: 8px;
+        width: 30px;
+        padding: 2px;
+    }
+}
+
+
+
+
+
