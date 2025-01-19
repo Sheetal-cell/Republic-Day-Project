@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image:url(images/god-6308823_640.jpg);
+    background-image: url('images/republic-day-background.jpg'); /* Add background image here */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,8 +17,11 @@ body {
 header {
     text-align: center;
     padding: 2rem 0;
-    background: linear-gradient(180deg, #ff9933, #ffffff, #138808); /* Saffron, White, Green gradient */
-    color: #001a9a;
+    background: linear-gradient(135deg, #ff9933, #ffffff, #138808); /* Saffron, White, Green gradient */
+    color: #fff;
+    background-image: url('images/republic-day-header.jpg'); /* Add specific header background image */
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
@@ -34,7 +37,6 @@ p {
     position: relative;
     width: 100%;
     height: 50px;
-    background: #4a9ef1;
     margin-top: 20px;
 }
 
@@ -50,11 +52,13 @@ p {
     position: absolute;
     width: 100%;
     top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
 .timeline-point {
-    position: absolute;
-    top: 100%;
     width: 60px;
     text-align: center;
     font-weight: bold;
@@ -75,7 +79,7 @@ p {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8); /* Light white background for transparency */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -85,14 +89,14 @@ p {
     position: relative;
     margin: 30px 0;
     padding: 20px;
-    background:linear-gradient(90deg,orange,white,green);
+    background-color: #ffffff;
     border-radius: 8px;
     transition: background-color 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .event:hover {
-    background:radial-gradient(orange,white,green);
+    background-color: #f1f1f1;
 }
 
 .event-content h2 {
@@ -225,7 +229,24 @@ html {
     }
 }
 
+/* Add event-specific background images for each event */
+#event-1950 {
+    background-image: url('images/1950-event-bg.jpg'); /* Specific background image for 1950 event */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
 
+#event-1952 {
+    background-image: url('images/1952-event-bg.jpg'); /* Specific background image for 1952 event */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
 
-
-
+#event-1957 {
+    background-image: url('images/1957-event-bg.jpg'); /* Specific background image for 1957 event */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
